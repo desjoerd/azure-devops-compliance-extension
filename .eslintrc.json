@@ -2,5 +2,14 @@
   "extends": [
     "plugin:prettier/recommended",
     "react-app"
-  ]
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "endOfLine": "auto",
+        "trailingComma": "es5"
+      }
+    ]
+  }
 }

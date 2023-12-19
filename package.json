@@ -1,76 +1,76 @@
 {
-  "name": "azdo-extensions-compliancy-frontend",
-  "homepage": "./",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "postbuild": "rimraf ./build/static/js/runtime~*",
-    "test": "tsc && react-scripts test --env=jest-environment-jsdom-sixteen --transformIgnorePatterns \"node_modules/(?!(azure-devops-ui))/\"",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx .",
-    "lint:fix": "eslint --cache --ext .js,.jsx,.ts,.tsx --fix ."
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "dependencies": {
-    "@types/jsonwebtoken": "^8.3.8",
-    "axios": "^0.19.2",
-    "azure-devops-extension-api": "^1.157.0",
-    "azure-devops-extension-sdk": "^2.0.11",
-    "azure-devops-ui": "^2.166.1",
-    "history": "^4.10.1",
-    "jsonwebtoken": "^8.5.1",
-    "moment": "^2.24.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-json-pretty": "^2.2.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@storybook/addon-actions": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
-    "@storybook/preset-create-react-app": "^2.1.1",
-    "@storybook/react": "^5.3.18",
-    "@testing-library/jest-dom": "^5.3.0",
-    "@testing-library/react": "^10.0.2",
-    "@testing-library/user-event": "^10.0.1",
-    "@types/axios": "^0.14.0",
-    "@types/history": "^4.7.5",
-    "@types/jest": "^25.1.5",
-    "@types/node": "^13.11.0",
-    "@types/react": "^16.9.32",
-    "@types/react-dom": "^16.9.6",
-    "@types/react-router-dom": "^5.1.3",
-    "axios-mock-adapter": "^1.18.1",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-prettier": "^3.1.2",
-    "jest-environment-jsdom-sixteen": "^1.0.3",
-    "kind-of": "^6.0.3",
-    "prettier": "^2.0.2",
-    "typescript": "^3.8.3"
-  },
-  "jest": {
-    "coverageReporters": [
-      "text",
-      "json"
+    "name": "azdo-extensions-compliancy-frontend",
+    "homepage": "./",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "postbuild": "rimraf ./build/static/js/runtime~*",
+        "test": "tsc && react-scripts test --env=jest-environment-jsdom-sixteen --transformIgnorePatterns \"node_modules/(?!(azure-devops-ui))/\"",
+        "eject": "react-scripts eject",
+        "storybook": "start-storybook -p 9009 -s public",
+        "build-storybook": "build-storybook -s public",
+        "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx .",
+        "lint:fix": "eslint --cache --ext .js,.jsx,.ts,.tsx --fix ."
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
     ],
-    "collectCoverageFrom": [
-      "**/*.{ts,tsx}",
-      "!src/index.tsx",
-      "!**/*.stories.{ts,tsx}",
-      "!**/node_modules/**",
-      "!**/vendor/**"
-    ]
-  }
+    "dependencies": {
+        "@types/jsonwebtoken": "^8.3.8",
+        "axios": "^0.19.2",
+        "azure-devops-extension-api": "^1.157.0",
+        "azure-devops-extension-sdk": "^2.0.11",
+        "azure-devops-ui": "^2.166.1",
+        "history": "^4.10.1",
+        "jwt-decode": "^4.0.0",
+        "moment": "^2.24.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-json-pretty": "^2.2.0",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "5.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@storybook/addon-actions": "^5.3.18",
+        "@storybook/addon-links": "^5.3.18",
+        "@storybook/addons": "^5.3.18",
+        "@storybook/preset-create-react-app": "^2.1.1",
+        "@storybook/react": "^5.3.18",
+        "@testing-library/jest-dom": "^5.3.0",
+        "@testing-library/react": "^10.0.2",
+        "@testing-library/user-event": "^10.0.1",
+        "@types/axios": "^0.14.0",
+        "@types/history": "^4.7.5",
+        "@types/jest": "^25.1.5",
+        "@types/node": "^13.11.0",
+        "@types/react": "^16.9.32",
+        "@types/react-dom": "^16.9.6",
+        "@types/react-router-dom": "^5.1.3",
+        "axios-mock-adapter": "^1.18.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.0.1",
+        "jest-environment-jsdom-sixteen": "^1.0.3",
+        "kind-of": "^6.0.3",
+        "prettier": "^3.1.1",
+        "typescript": "^3.8.3"
+    },
+    "jest": {
+        "coverageReporters": [
+            "text",
+            "json"
+        ],
+        "collectCoverageFrom": [
+            "**/*.{ts,tsx}",
+            "!src/index.tsx",
+            "!**/*.stories.{ts,tsx}",
+            "!**/node_modules/**",
+            "!**/vendor/**"
+        ]
+    }
 }

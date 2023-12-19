@@ -9,8 +9,8 @@
         "postbuild": "rimraf ./build/static/js/runtime~*",
         "test": "tsc && react-scripts test --env=jest-environment-jsdom-sixteen --transformIgnorePatterns \"node_modules/(?!(azure-devops-ui))/\"",
         "eject": "react-scripts eject",
-        "storybook": "start-storybook -p 9009 -s public",
-        "build-storybook": "build-storybook -s public",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build",
         "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx .",
         "lint:fix": "eslint --cache --ext .js,.jsx,.ts,.tsx --fix ."
     },
@@ -37,11 +37,12 @@
     },
     "devDependencies": {
         "@babel/core": "^7.9.0",
-        "@storybook/addon-actions": "^5.3.18",
-        "@storybook/addon-links": "^5.3.18",
-        "@storybook/addons": "^5.3.18",
-        "@storybook/preset-create-react-app": "^2.1.1",
-        "@storybook/react": "^5.3.18",
+        "@storybook/addon-essentials": "^7.6.6",
+        "@storybook/addon-interactions": "^7.6.6",
+        "@storybook/addon-links": "^7.6.6",
+        "@storybook/addon-onboarding": "^1.0.10",
+        "@storybook/preset-create-react-app": "^7.6.6",
+        "@storybook/react-webpack5": "^7.6.6",
         "@testing-library/jest-dom": "^5.3.0",
         "@testing-library/react": "^10.0.2",
         "@testing-library/user-event": "^10.0.1",
@@ -55,10 +56,14 @@
         "axios-mock-adapter": "^1.18.1",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.0.1",
+        "eslint-plugin-storybook": "^0.6.15",
         "jest-environment-jsdom-sixteen": "^1.0.3",
         "kind-of": "^6.0.3",
         "prettier": "^3.1.1",
-        "typescript": "^3.8.3"
+        "prop-types": "^15.8.1",
+        "storybook": "^7.6.6",
+        "typescript": "^3.8.3",
+        "webpack": "^5.89.0"
     },
     "jest": {
         "coverageReporters": [

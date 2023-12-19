@@ -1,7 +1,8 @@
 {
   "extends": [
     "plugin:prettier/recommended",
-    "react-app"
+    "react-app",
+    "plugin:storybook/recommended"
   ],
   "rules": {
     "prettier/prettier": [
